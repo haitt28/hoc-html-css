@@ -1,0 +1,33 @@
+p {
+    color: green;
+    color: #ffa400;
+    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.5);
+    /*  làm mờ màu */
+}
+
+.title-22 {
+    /* width: 100px;
+    height: 100px; */
+    /* min-width: 100px; 
+    min-height: 100px; */
+    max-width: 10%;
+    max-height: 100px;
+    overflow: hidden;
+    /* ẩn phần chữ bị lồi ra ngoài */
+    background-color: green;
+}
+
+.background2 {
+    width: 70%;
+    height: 1000px;
+    /*
+    background-image: url("https://images.unsplash.com/photo-1661791674631-4d5472d709f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    background-position: center center;
+    background-size: cover;             kéo ảnh ra 
+    background-repeat: no-repeat;  không bị lặp ảnh khi ảnh nhỏ 
+    background-attachment: fixed;  không bị scroll 
+    */
+    background:
+        red url("https://images.unsplash.com/photo-1661791674631-4d5472d709f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80") no-repeat center center / cover;
+}
