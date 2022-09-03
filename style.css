@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
 p {
     color: green;
     color: #ffa400;
@@ -19,8 +25,8 @@ p {
 }
 
 .background2 {
-    width: 70%;
-    height: 1000px;
+    /* width: 70%;
+    height: 1000px; */
     /*
     background-image: url("https://images.unsplash.com/photo-1661791674631-4d5472d709f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
     background-position: center center;
@@ -28,6 +34,90 @@ p {
     background-repeat: no-repeat;  không bị lặp ảnh khi ảnh nhỏ 
     background-attachment: fixed;  không bị scroll 
     */
-    background:
-        red url("https://images.unsplash.com/photo-1661791674631-4d5472d709f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80") no-repeat center center / cover;
+    background: red
+        url("https://images.unsplash.com/photo-1661791674631-4d5472d709f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80")
+        no-repeat center center;
+    width: 100vw;
+    height: 100vh;
+}
+/* font-size: 100% = 16px  */
+/* 1em = 1rem = 16px */
+.em {
+    width: 10em;
+    height: 10em;
+    background-color: #ffa400;
+    font-size: 32px;
+    border-radius: 5px solid red;
+    /* 1em = 32px => 10em = 320x  */
+    /* là đơn vị sẽ phụ thuộc vào thuộc tính font-size của chính nó hoặc phần tử chứa nó */
+}
+
+.rem {
+    width: 10rem;
+    height: 10rem;
+    background-color: #ff7870;
+    font-size: 32px;
+    border-radius: 25px;
+    /* outline: 2px solid red; */
+
+    /* Là đơn vị sẽ phụ thuộc vào thuộc tính của thẻ html  */
+}
+
+.boxed {
+    width: 10rem;
+    height: 10rem;
+    border: 5px solid black;
+    padding: 1rem;
+    background-color: orange;
+}
+.box {
+    width: 200px;
+    height: 300px;
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid yellow;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #ffa400;
+}
+.box2 {
+    max-width: 500px;
+    /* hiển thị trên 1 dòng  */
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* hiện thỉ trên bao nhiêu hàng */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+.box__button {
+    margin: 40px 0px;
+}
+.button--left,
+.button--center,
+.button--right {
+    padding: 1rem 3rem;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    background-color: blueviolet;
+    margin-left: 2rem;
+}
+
+.button--center {
+    border-radius: 4px;
+}
+
+.button--right {
+    border-radius: 2rem;
+}
+.image--center {
+    text-align: center;
+}
+.image {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
 }
